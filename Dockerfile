@@ -25,7 +25,7 @@ COPY ./ubnt-tools_1.0.deb put-unifi-protect-deb-here/*.deb /
 RUN dpkg -i /*.deb \
     && rm -f /*.deb
 
-VOLUME ["/srv/unifi-protect", "/var/lib/postgresql/10/main"]
+VOLUME ["/srv/unifi-protect", "/var/lib/postgresql"]
 
 EXPOSE 7080/tcp 7443/tcp 7444/tcp 7447/tcp 7550/tcp 7442/tcp
 
